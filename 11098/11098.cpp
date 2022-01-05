@@ -23,9 +23,13 @@ int main()
 		}
 			for (int z = 0; z < p; z++)
 			{
-				for (int x = 1; x < p; x++)
+				for (int x = 0; x < p; x++)
 				{
-					if (c[z] < c[x] && maxCost < c[x])
+					if (p == 1)
+					{
+						max = name[0];
+					}
+					else if (c[z] < c[x] && maxCost < c[x])
 					{
 						maxCost = c[x];
 						max = name[x];
